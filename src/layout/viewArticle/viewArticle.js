@@ -137,7 +137,7 @@ class ViewArticle extends Component {
     if (this.props.auth.isEmpty) {
       console.log(this.props.auth.isEmpty);
       alert("Please login to comment");
-      this.props.history.push({ pathname: "/login" });
+      this.props.history.push({ pathname: "/blog/login" });
     } else {
       const comment = this.state.comment;
       comment.username = this.props.auth.displayName;
@@ -161,7 +161,7 @@ class ViewArticle extends Component {
               <Col md={12} sm={12} xs={12}>
                 <div className="blog_post full_blog_post">
                   <h3>
-                    <Link to={{ pathname: "/" }}>
+                    <Link to={{ pathname: "/blog" }}>
                       {this.state.article.title}
                     </Link>
                   </h3>
@@ -174,7 +174,7 @@ class ViewArticle extends Component {
                     this.props.auth.uid === "ZuLPiPTMY5aTcKYNdN8RPTxudy63" ? (
                       <Link
                         to={{
-                          pathname: "/editArticle/" + this.state.article.id,
+                          pathname: "/blog/editArticle/" + this.state.article.id,
                           state: { article: this.state.article },
                         }}
                       >
@@ -186,14 +186,14 @@ class ViewArticle extends Component {
                   </h5>
                   <p className="blog_info">
                     <i className="fa fa-comment"></i>
-                    <Link to={{ pathname: "/" }}>
+                    <Link to={{ pathname: "/blog/" }}>
                       {this.state.comments.length} comments
                     </Link>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <i className="fa fa-tags"></i>
-                    <Link to={{ pathname: "/" }}>Photo </Link>
-                    <Link to={{ pathname: "/" }}>Girl </Link>
-                    <Link to={{ pathname: "/" }}>Graphics </Link>
+                    <Link to={{ pathname: "/blog/" }}>Photo </Link>
+                    <Link to={{ pathname: "/blog/" }}>Girl </Link>
+                    <Link to={{ pathname: "/blog/" }}>Graphics </Link>
                   </p>
                   <div className="blog-content">
                     <img

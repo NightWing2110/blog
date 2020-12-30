@@ -49,7 +49,7 @@ class Header extends Component {
       <Row>
         <Navbar className="navbar" expand="md" dark fixed="top">
           <Col md="3" className="logo-section">
-            <NavbarBrand className="full" href="/">
+            <NavbarBrand className="full" href="/blog/">
               <img className="logo" src={Logo} alt="logo"></img>
             </NavbarBrand>
           </Col>
@@ -59,17 +59,17 @@ class Header extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="mr-auto" navbar>
                 <NavItem className="navItem">
-                  <NavLink className="navLink" href="/">
+                  <NavLink className="navLink" href="/blog/">
                     Trang chủ
                   </NavLink>
                 </NavItem>
                 <NavItem className="navItem">
-                  <NavLink className="navLink" href="/about">
+                  <NavLink className="navLink" href="/blog/about">
                     Blog
                   </NavLink>
                 </NavItem>
                 <NavItem className="navItem">
-                  <NavLink className="navLink" href="/contact">
+                  <NavLink className="navLink" href="/blog/contact">
                     Liên hệ 
                   </NavLink>
                 </NavItem>
@@ -85,7 +85,7 @@ class Header extends Component {
                 <DropdownMenu right>
                   {this.props.auth.isEmpty ? (
                     <DropdownItem>
-                      <NavLink className="new_post" href="/login">
+                      <NavLink className="new_post" href="/blog/login">
                         Đăng nhập
                       </NavLink>
                     </DropdownItem>
@@ -101,7 +101,7 @@ class Header extends Component {
                   )}
                   {this.props.auth.uid === "hyggTR6K5thQqR457BRnRgGbaDo1" || this.props.auth.uid === "ZuLPiPTMY5aTcKYNdN8RPTxudy63" ? (
                     <DropdownItem>
-                      <NavLink className="new_post" href="/new-article">
+                      <NavLink className="new_post" href="/blog/new-article">
                         Thêm bài viết
                       </NavLink>
                     </DropdownItem>

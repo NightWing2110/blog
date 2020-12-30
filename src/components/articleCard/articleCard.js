@@ -39,7 +39,7 @@ const ArticleCard = (props) => {
             <Col md={12} sm={12} xs={12}>
               <div className="blog_post full_blog_post">
                 <h3>
-                  <Link to={{ pathname: "article/" + props.data.id }}>{props.data.title}</Link>
+                  <Link to={{ pathname: "/blog/article/" + props.data.id }}>{props.data.title}</Link>
                 </h3>
                 <h5>
                   Written by Me on{" "}
@@ -49,7 +49,7 @@ const ArticleCard = (props) => {
                   <i className="fa fa-eye"></i>
                   <Link
                     to={{
-                      pathname: "article/" + props.data.id,
+                      pathname: "/blog/article/" + props.data.id,
                       state: { article: props.data },
                     }}
                   >
@@ -59,7 +59,7 @@ const ArticleCard = (props) => {
                   <i className="fa fa-comment"></i>
                   <Link
                     to={{
-                      pathname: "article/" + props.data.id,
+                      pathname: "/blog/article/" + props.data.id,
                       state: { article: props.data },
                     }}
                   >
@@ -67,9 +67,9 @@ const ArticleCard = (props) => {
                   </Link>
                   &nbsp;&nbsp;&nbsp;&nbsp;
                   <i className="fa fa-tags"></i>
-                  <Link to={{ pathname: "/" }}>Photo </Link>
-                  <Link to={{ pathname: "/" }}>Girl </Link>
-                  <Link to={{ pathname: "/" }}>Graphics </Link>
+                  <Link to={{ pathname: "/blog/" }}>Photo </Link>
+                  <Link to={{ pathname: "/blog/" }}>Girl </Link>
+                  <Link to={{ pathname: "/blog/" }}>Graphics </Link>
                 </p>
                 <div className="blog-content">
                   <div className="content-img">
@@ -84,7 +84,7 @@ const ArticleCard = (props) => {
                   <Link
                     className="btn btn-primary"
                     to={{
-                      pathname: "article/" + props.data.id,
+                      pathname: "/blog/article/" + props.data.id,
                       state: { article: props.data },
                     }}
                   >

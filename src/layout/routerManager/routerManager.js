@@ -33,11 +33,11 @@ const AdminOnly = (ComponsedComponent, auth) => {
                             })
                         } else {
                             alert("You're not an administrator! Pleas login with user administrator!");
-                            this.props.history.push('/login');
+                            this.props.history.push('/blog/login');
                         }
                     })
             }else {
-                this.props.history.push('/login')
+                this.props.history.push('/blog/login')
             }
         }
         render() {
@@ -68,24 +68,24 @@ const AdminOnly = (ComponsedComponent, auth) => {
             {
              this.props.auth.isLoaded ?
              <Switch>
-                <Route path="/" exact>
+                <Route path="/blog/" exact>
                     <Main />
                 </Route>
-                <Route path="/contact" exact>
+                <Route path="/blog/contact" exact>
                     <Contact />
                 </Route>
-                <Route path="/about" exact>
+                <Route path="/blog/about" exact>
                     <About />
                 </Route>
-                <Route path="/login">
+                <Route path="/blog/login">
                     <LoginPage />
                 </Route>
-                <Route path="/article/:id">
+                <Route path="/blog/article/:id">
                     <ViewArticle />
                 </Route>
-                <Route path="/new-article" component={AdminOnly(NewArticle, this.props.auth)}>
+                <Route path="/blog/new-article" component={AdminOnly(NewArticle, this.props.auth)}>
                 </Route>
-                <Route path="/editArticle/:id" component={AdminOnly(EditArticle, this.props.auth)}>
+                <Route path="/blog/editArticle/:id" component={AdminOnly(EditArticle, this.props.auth)}>
                 </Route>
                
              </Switch>  
