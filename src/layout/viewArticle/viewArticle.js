@@ -67,7 +67,7 @@ class ViewArticle extends Component {
             }
           );
         } else {
-          this.props.history.push({ pathname: "/" });
+          this.props.history.push({ pathname: "/blog/" });
         }
       });
   };
