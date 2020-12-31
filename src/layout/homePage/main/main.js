@@ -81,12 +81,9 @@ export default class Main extends Component {
               <Col sm="5">
                 <div className="slider_cont_section">
                  
-                  <h3>Blog ẩm thực</h3>
+                  <h3>Blog Du Lịch</h3>
                   <p>
-                  Ẩm thực Việt Nam ngày càng đa dạng,
-                  phong phú khi vừa tiếp thu những tinh hoa của thế giới vừa kế thừa và phát huy những đặc trưng nổi bật của dân tộc.
-                  Cũng chính nhờ điều này, mà ẩm thực nước ta ngày càng khẳng định vị thế của mình trong nền ẩm thực của thế giới,
-                  khi liên tiếp có những món ăn được xếp hạng cao trong những danh sách bình chọn uy tín.
+                  Là một quốc gia với những bờ biển kì diệu, những khu rừng xanh mướt, những loại trái cây nhiệt đới tươi ngon cùng những con người địa phương thân thiện và lịch sử thú vị, Việt Nam chắc chắn nên nằm trong danh sách những điểm du lịch phải đặt chân đến trong đời của bạn
                   </p>
                   <div className="button-section">
                     <Link to="#">Read More</Link>

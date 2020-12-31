@@ -51,7 +51,7 @@ export default class componentName extends Component {
             <Row>
               <Col md={12}>
                 <div className="contactHeading">
-                  <h3>Blog Ẩm Thực </h3>
+                  <h3>Blog Du Lịch </h3>
                 </div>
               </Col>
             </Row>

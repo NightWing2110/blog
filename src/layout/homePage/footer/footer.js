@@ -29,7 +29,7 @@ export default class Footer extends Component {
                     <img src={Phone_icon} alt="icon"></img>
                   </span>
                   <span className="text_cont">
-                    036 759 2479 <br /> 037 983 8029
+                    039 880 5906 <br /> 037 241 4021
                   </span>
                 </li>
                 <li>
@@ -37,7 +37,7 @@ export default class Footer extends Component {
                     <img src={Mail_icon} alt="mail"></img>
                   </span>
                   <span className="text_cont">
-                    Kimthanh99315@gmail.com <br /> thaovan8599@gmail.com
+                    luuquanghoangdy@gmail.com <br /> vokiet.15111999@gmail.com
                   </span>
                 </li>
               </ul>
